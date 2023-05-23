@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Capstone Symposium Website">
+    <meta name="author" content="AUTHOR">
+    <meta name="keywords" content="KEYWORD SECTION ">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <title>Capstone Symposium</title>
+    <link rel="stylesheet" href="style/main.css">
+    <style>@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');</style>
+  </head>
+  <body>
+    <!-- NavBar section  -->
+    <div class="navbar" role="navigation">
+      <div class="navUrl">
+        <h1><a href="#hero" id="title">Camosun College Symposium</a></h1>
+        <label for="toggle">&#9776;</label>
+        <input type="checkbox" id="toggle" data-toggle-content="0C994">
+        <div class="menu">
+          <a href="#" class="navOpt" id="LinkOne">Link #1</a>
+          <a href="#" class="navOpt" id="LinkTwo">Link #2</a>
+          <a href="#" class="navOpt" id="LinkThree">Link #3</a>
+        </div>
+      </div>
+      <div id="timeBox">
+        <div><p id="location"></p></div>
+        <div><p id="temp"></p></div>
+        <div id="icon"></div>
+        <p id="time"></p>
+      </div>
+    </div>
+
+    <!-- Start of Projects Section -->
+    <div id="projects" class="pt full">
+      <h1 class="bgg bb projectTitle">Teams</h1>
+      <div id="projectsBody"></div>   
+    </div>
+    <!-- End of Projects Section -->
+    <!-- Start of Footer Section -->
+    <footer>
+      <p>Camosun College - Address - Number - Mystery</p>
+    </footer>
+      <!-- End of Footer Section -->
+    <script src="scripts/projects.js"></script>
+	  <script src="scripts/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,466 @@
+body, html {
+  height: 100%;
+  width: 100%;
+  font-family: 'Open Sans', sans-serif;
+  padding: 0;
+  margin: 0;
+  color: lightblue;
+}
+/*Quick CSS Classes*/
+.bb { border: 1px solid black; }
+.bgg { background-color:rgba(59, 59, 56, .8) }
+.pt { 
+  padding-top: 70px; /*offsets navbar*/
+  padding-bottom: 15px;
+} 
+.full {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+} 
+/*Main Background container*/
+#background {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -2;
+  height: 100%;
+  width: 100%;
+  background-color:darkcyan;
+  background-image: url(../images/mobileBg.webp);
+  background-size: fill;
+  background-repeat: no-repeat;
+}
+/*Hides Background on */
+#background-video, 
+#timeBox { 
+  display: none;
+}
+/*************************************
+  Navbar CSS (mobile)
+*************************************/
+/*NavbarCSS defaulting to mobile*/
+.navbar {
+  height: auto; /*Dynamic sizing for mobile*/
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border-bottom: 1px solid black;
+  background: rgb(59, 59, 56);
+}
+.navbar a {
+  text-decoration: none;
+  color: white;
+  margin: 5px;
+}
+label{
+  margin-top: -10px;
+  margin-bottom: 5px;
+  font-size: 26px;
+}
+.navUrl { 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.menu, 
+#toggle { display: none; }
+
+#toggle:checked + .menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+/*************************************
+  Hero Section (Mobile)
+*************************************/
+#heroContent{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 25px;
+}
+#heroContent p{
+  margin: 0 0 5px 0;
+  padding: 0;
+}
+#heroContent .mobile{
+  font-size: 12px;
+}
+
+/*************************************
+  About Section (Mobile)
+*************************************/
+#aboutSection { 
+  display: flex;
+  flex-direction: column-reverse;
+  width: 94%;
+  
+}
+#aboutMain h1{ padding: 10px }
+.right, .left { 
+  padding: 4px; }
+
+.left { 
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+}
+.top, .bottom {
+  display: flex;
+  padding: 10px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#headshot {
+  display: flex;
+  justify-content: center;
+  height: 500px;
+  width: 100%;
+  object-fit: fill;
+  overflow: hidden;
+}
+#headshot img{
+  border: 1px solid black;
+}
+.modalImage{display: none;}
+
+/***************************************************
+  Projects Section (Mobile)
+***************************************************/
+#projects {
+  overflow: auto;
+  background-color: lightblue;
+}
+#projects h1{ 
+  padding: 2px 5px;
+  margin-bottom: 0;
+}
+#projectsBody {
+  height: auto;
+  min-height: 70vh;
+  object-fit: contain;
+  padding: 5px;
+  width: 95%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: stretch;
+  justify-content: center;
+}
+.projectCard {
+  width: 325px;
+  max-height: 400px;
+  border: 1px solid black;
+  padding: 10px;
+  margin: 5px;
+  background: slategray;
+  color: black;
+  overflow: hidden;
+  border-radius: 5px;
+}
+.projectCard .imgCont {
+  display: flex;
+  justify-content: center;
+  width: auto;
+  height: 300px;
+  overflow: hidden;
+  object-fit:contain;
+  border: 1px solid black;
+  background-color: black;
+
+}.contentText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.projectCard h2 {
+  margin: 5px 0;
+  text-decoration: underline;
+  font-size: 22px;
+}
+.buttonCont {
+  display:flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-end
+}
+.projectCard button {
+  border: 1px solid black;
+  font-family: 'Open Sans', sans-serif;
+  background-color: rgba(59, 59, 56, .9);
+  color: white;
+  width: 20%;
+  height: 2rem;
+}
+button:hover {
+  background: black;
+  color: white;
+}
+/***************************************************
+  Contact Section (Mobile)
+***************************************************/
+#contact h1{
+  padding: 15px;
+}
+#contactBody {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  min-width: 250px;
+  min-height: 250px;
+}
+#contact a{
+  text-decoration: none;
+  color: inherit;
+  margin: 5px;
+}
+#socialLinks {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.link { font-size: 14px;}
+.link:hover {color: royalblue;}
+/*************************************
+  Footer Section (Mobile)
+**************************************/
+footer {
+  display: flex;
+  flex-direction: row;
+  background: slategray;
+  width: 100%;
+  height: auto;
+  border-top: 1px solid black;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: rgb(59, 59, 56);
+  color: white;
+  overflow: hidden;
+}
+/*************************************
+  Modal Section (Mobile)
+*************************************/
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 3; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100vh; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.45); /* Black w/ opacity */
+}
+.modal-content {
+  display: block;
+  background-color: rgba(59, 59, 56, .95);
+  margin: 5px auto; /* 5px from the top and centered */
+  min-height: 85%;
+  padding: 5px;
+  background-image: url(../images/modalBg.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: 1px solid black;
+  width: 100%; /* Could be more or less, depending on screen size */
+}
+.modalContent h1
+.modalDescription {
+  border: 1px solid black;
+  padding: 15px;
+  background-color: crimson;
+  color: black;
+}
+.close { /*Modal Close Button*/
+  color: #aaa;
+  float: right;
+  align-self: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+.modalMain {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.modalLeftText h1 { 
+  font-size: 20px;
+  margin-bottom: 0;
+}
+.modalLeftText{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(15, 15, 15, .45);
+  border: 1px solid black;
+  padding: 10px;
+  margin-top: 5px;
+}
+.modalDescription {
+  padding: 10px;
+  background-color: rgba(15, 15, 15, .85);
+  border: 1px solid black;
+}
+
+#modalLeft,
+#modalRight {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: left;
+  padding: 10px;
+}
+.modalImageContainer { display: none;}
+.modalLink {
+  padding: 10px;
+  text-decoration: none;
+  border: 1px solid black;
+  color: white;
+  font-size: 1.5rem;
+  margin: 5px;
+  background-color: #404040;
+}
+.modalLink:hover {
+  background: white;
+  color: black;
+}
+.noLink {
+  display: none;
+}
+.modalButtonCont { 
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+
+}
+/*************************************
+  ScrollUp box (Mobile)
+*************************************/
+.scrollUp a { 
+  text-decoration: none; 
+  color: lightgray;
+}
+.scrollUp{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  z-index: 2;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  background-color: black;
+  font-size: 36px;
+  height: 35px;
+  width: 35px;
+  padding: 0;
+  margin: 0;
+}
+.scrollUp a:hover { color: black;}
+.scrollUp:hover{ background-color: lightgray; }
+/*************************************
+  Media query for non-cell phones
+*************************************/
+@media only screen and (min-width: 900px) {
+  .full { flex-direction: row; }
+  label { display: none }
+  #background {
+      display: flex;
+  }
+  #background-video { 
+      display: flex;
+      width: 100%;
+      height: 100%;
+      background-position: center;
+      position: fixed;  /* bg slides without this */ 
+      object-fit: fill; /* lets background fit screen instead of cropping out.*/
+      left: 0;  
+      right: 0;
+      top: 0;
+      bottom: 0;
+  }
+  /*************************************
+      Navbar CSS (PC)
+  *************************************/
+  .navOpt:hover, #timeBox:hover {
+      color: green;
+      transition: 0.4s ease-in;
+  }
+  #title:hover{
+      color:royalblue;
+      transition: 0.3s ease-in;
+  }
+  .navbar{ 
+      flex-direction: row;
+      height: 70px;
+      justify-content: space-between;
+      align-items: center;
+      padding-right: 20px;    
+      padding-left: 20px;
+  }
+  .navUrl{flex-direction: row;}
+  .menu{ 
+      display: flex;
+      margin-left: 5px;
+  }
+  .menu a { margin: 5px; }
+  #timeBox {
+      margin-right: 10px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+  }
+  #time { padding-right: 40px; }
+
+  /***************************************************
+      Projects Section (PC)
+  ***************************************************/
+  #projects {
+      flex-direction: column;
+      border-top: 1px solid black;
+      border-bottom: 1px solid black;
+  }
+  .projectCard { opacity: 70%;}
+  .projectCard:hover {
+      opacity: 100%;
+      transition: .2s ease-in;
+      background: #d2b48c;
+  }
+
+  /***************************************************
+      Scrollbar CSS
+  ***************************************************/
+  /* Scrollbar Styling */
+  ::-webkit-scrollbar { width: 50px; }
+  /* Track */
+  ::-webkit-scrollbar-track { border-radius: 10px; }
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+      background: none; 
+      background-position: center;
+      background-repeat: no-repeat;
+  }
+  body { overflow: overlay; } /*allows the content to spill into the area reserved for the scrollbar*/
+}
