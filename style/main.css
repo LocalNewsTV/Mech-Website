@@ -21,7 +21,16 @@ body, html {
   justify-content: center;
   align-items: center;
 } 
-
+.navUrl ul {
+  list-style: none;
+  display: flex;
+}
+a:hover {
+  cursor: pointer;
+}
+.navbar .navCurrentPage {
+  color: red;
+}
 /*************************************
   Navbar CSS (mobile)
 *************************************/
@@ -57,7 +66,9 @@ label{
 }
 .menu, 
 #toggle { display: none; }
-
+#title {
+  font-size: 20px;
+}
 #toggle:checked + .menu {
   display: flex;
   flex-direction: column;
@@ -143,7 +154,7 @@ button:hover {
 **************************************/
 footer {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   background: slategray;
   width: 100%;
   height: auto;
@@ -154,8 +165,12 @@ footer {
   background: rgb(59, 59, 56);
   color: white;
   overflow: hidden;
+  padding: 10px;
 }
-
+footer p {
+  margin: 2px;
+  font-size: 14px;
+}
 /*************************************
   ScrollUp box (Mobile)
 *************************************/
@@ -179,8 +194,6 @@ footer {
   padding: 0;
   margin: 0;
 }
-.scrollUp a:hover { color: black;}
-.scrollUp:hover{ background-color: lightgray; }
 /*************************************
   Media query for non-cell phones
 *************************************/
@@ -205,14 +218,7 @@ footer {
   /*************************************
       Navbar CSS (PC)
   *************************************/
-  .navOpt:hover, #timeBox:hover {
-      color: green;
-      transition: 0.4s ease-in;
-  }
-  #title:hover{
-      color:royalblue;
-      transition: 0.3s ease-in;
-  }
+
   .navbar{ 
       flex-direction: row;
       height: 70px;
