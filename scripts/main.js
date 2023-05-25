@@ -1,49 +1,42 @@
 newE = (type) => document.createElement(type);
 /******************************************************************************* 
- * @param {Object} project - Object containing the information for each project  
+ * @param {Object} team - Object containing the information for each project  
  * @return {Object} - returns card object to append to the Dom
- * @description - Creates project cards to be used on the dom
+ * @description - Creates team cards to be used on the dom
 ********************************************************************************/
-const projectCardMaker = (project) => {
+const projectCardMaker = (team) => {
     const cardMain = newE('div');
     $(cardMain).addClass('projectCard');
 
-    const card = newE('div');
-    card.id = project.id;
-    $(card).addClass('content');
+    // const card = newE('div');
+    // card.id = team.id;
+    // $(card).addClass('content');
 
-    const cardBody = newE('div');
-    $(cardBody).addClass('contentText');
-    $(card).append(cardBody);
+    // const cardBody = newE('div');
+    // $(cardBody).addClass('contentText');
+    // $(card).append(cardBody);
 
-    const cardTitle = newE('h2');
-    $(cardTitle).html(project.title);
-    $(cardBody).append(cardTitle);
-
-    const cardText = newE('p');
-    $(cardText).html('');
-    $(cardBody).append(cardText);
+    // const cardText = newE('p');
+    // $(cardText).html('');
+    // $(cardBody).append(cardText);
 
     const button = newE('button');
     $(button).html("More");
     const buttonCont = newE('div');
     $(buttonCont).addClass('buttonCont');
+    
+    
+    const cardTitle = newE('h2');
+    $(cardTitle).html(team.title);
+    $(buttonCont).append(cardTitle);
+    
     $(buttonCont).append(button);
+
     // $(cardBody).append(button);
-    $(cardMain).append(card, buttonCont);
+    $(cardMain).append(buttonCont);
     return cardMain;
 }
-/******************************************************************************* 
- * @description - runs an interval updating the clock displayed in PDT 
-********************************************************************************/
-const startNavBarTime = () => {
-    const theTime = () => {
-        const date = new Date();
-        $('#time').html(date.toLocaleTimeString('en-US', contact.timeZone));
-    }
-    theTime();
-    setInterval(theTime, 1000);
-}
+
 /******************************************************************************* 
  * @description - Iterates through each element in the projects array and appends the 
  * returned value from projectCardMaker() to the Projects Body
@@ -72,19 +65,3 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         });
     });
 });
-
-/** @description - Resize event that will Render in / Remove the Alexandra Falls video depending on size of viewports */ 
-$(window).resize(()=>{
-    pixelWidth = 900;
-    background = $('#background-video').css('background') == 'url(images/bgVid.m4v)' ? true : false; 
-    if(parseInt(window.innerWidth) >= pixelWidth && !background){
-        $('#background-video').css('background', 'url(images/bgVid.m4v)')
-        $('#background-video').attr("src", 'images/bgVid.m4v')
-    }
-    else if(parseInt(window.innerWidth) < pixelWidth && background){
-        $('#background-video').css('background', '');
-        $('#background-video').removeAttr('src');
-    }
-});
-
-$('#contactSquare').on("click", circle);
