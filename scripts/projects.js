@@ -5,63 +5,76 @@
  * 
  *****************************************************************************/
 /*
-    {
-        id: "",
-        title: "",
-        sourceImage: "images/projectImg/<File>",
-        description: "",
-            writeUp: {
-                url: "https://localnewstv.github.io/<Repo>",
-                github: "https://github.com/LocalNewsTV/<Repo>",
-                tools: "",
-                summary: ""
-            },
-    },
+      {
+          id: "teamA",
+          title: "Team A",
+          href: '#',
+          sourceImage: "https://fakeimg.pl/325x200",
+          description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In hendrerit turpis in arcu sodales, id convallis sem bibendum. Pellentesque condimentum mollis venenatis."
+      },
  */
     projects = [
       {
           id: "teamA",
           title: "Team A",
-          href: '#'
+          href: 'teams/teamtemplate.html',
+          sourceImage: "https://fakeimg.pl/325x200",
+          description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In hendrerit turpis in arcu sodales, id convallis sem bibendum. Pellentesque condimentum mollis venenatis."
       },
       {
           id: "teamB",
           title: "Team B",
-          href: '#'
+          href: 'teams/teamtemplate.html',
+          sourceImage: "https://fakeimg.pl/325x200",
+          description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In hendrerit turpis in arcu sodales, id convallis sem bibendum. Pellentesque condimentum mollis venenatis."
       },
       {
           id: "teamC",
           title: "Team C",
-          href: '#'
+          href: 'teams/teamtemplate.html',
+          sourceImage: "https://fakeimg.pl/325x200",
+          description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In hendrerit turpis in arcu sodales, id convallis sem bibendum. Pellentesque condimentum mollis venenatis."
       },
       {
           id: "teamD",
           title: "Team D",
-          href: '#'
+          href: 'teams/teamtemplate.html',
+          sourceImage: "https://fakeimg.pl/325x200",
+          description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In hendrerit turpis in arcu sodales, id convallis sem bibendum. Pellentesque condimentum mollis venenatis."
       },
       {
           id: "teamE",
           title: "Team E",
-          href: '#'
+          href: 'teams/teamtemplate.html',
+          sourceImage: "https://fakeimg.pl/325x200",
+          description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In hendrerit turpis in arcu sodales, id convallis sem bibendum. Pellentesque condimentum mollis venenatis."
       },
       {
           id: "teamF",
           title: "Team F",
-          href: '#'
+          href: 'teams/teamtemplate.html',
+          sourceImage: "https://fakeimg.pl/325x200",
+          description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In hendrerit turpis in arcu sodales, id convallis sem bibendum. Pellentesque condimentum mollis venenatis."
       },
       {
           id: "teamG",
           title: "Team G",
-          href: '#'
+          href: 'teams/teamtemplate.html',
+          sourceImage: "https://fakeimg.pl/325x200",
+          description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In hendrerit turpis in arcu sodales, id convallis sem bibendum. Pellentesque condimentum mollis venenatis."
       },
       {
           id: "teamH",
           title: "Team H",
-          href: '#'
+          href: 'teams/teamtemplate.html',
+          sourceImage: "https://fakeimg.pl/325x200",
+          description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In hendrerit turpis in arcu sodales, id convallis sem bibendum. Pellentesque condimentum mollis venenatis."
       },
       {
           id: "teamI",
           title: "Team I",
-          href: '#'
+          href: 'teams/teamtemplate.html',
+          sourceImage: "https://fakeimg.pl/325x200",
+          description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In hendrerit turpis in arcu sodales, id convallis sem bibendum. Pellentesque condimentum mollis venenatis."
       },
   ]

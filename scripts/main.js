@@ -4,39 +4,44 @@ newE = (type) => document.createElement(type);
  * @return {Object} - returns card object to append to the Dom
  * @description - Creates team cards to be used on the dom
 ********************************************************************************/
-const projectCardMaker = (team) => {
+const projectCardMaker = (project) => {
     const cardMain = newE('div');
     $(cardMain).addClass('projectCard');
 
-    // const card = newE('div');
-    // card.id = team.id;
-    // $(card).addClass('content');
+    const card = newE('div');
+    card.id = project.id;
+    $(card).addClass('content');
+    
+    const imageContainer = newE('div');
+    $(imageContainer).addClass('imgCont')
+    const cardImage = newE('img');
+    cardImage.src = project.sourceImage;
+    cardImage.alt = project.description;
+    $(imageContainer).append(cardImage);
+    $(card).append(imageContainer)
 
-    // const cardBody = newE('div');
-    // $(cardBody).addClass('contentText');
-    // $(card).append(cardBody);
+    const cardBody = newE('div');
+    $(cardBody).addClass('contentText');
+    $(card).append(cardBody);
 
-    // const cardText = newE('p');
-    // $(cardText).html('');
-    // $(cardBody).append(cardText);
+    const cardTitle = newE('h2');
+    $(cardTitle).html(project.title);
+    $(cardBody).append(cardTitle);
+
+    const cardText = newE('p');
+    $(cardText).html(project.description);
+    $(cardBody).append(cardText);
 
     const button = newE('button');
+    $(button).on('click', ()=>{window.location.href=`${project.href}`});
     $(button).html("More");
     const buttonCont = newE('div');
     $(buttonCont).addClass('buttonCont');
-    
-    
-    const cardTitle = newE('h2');
-    $(cardTitle).html(team.title);
-    $(buttonCont).append(cardTitle);
-    
     $(buttonCont).append(button);
-
     // $(cardBody).append(button);
-    $(cardMain).append(buttonCont);
+    $(cardMain).append(card, buttonCont);
     return cardMain;
 }
-
 /******************************************************************************* 
  * @description - Iterates through each element in the projects array and appends the 
  * returned value from projectCardMaker() to the Projects Body
@@ -65,3 +70,4 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         });
     });
 });
+
