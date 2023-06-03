@@ -1,57 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Team __ Page</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <header>
-    <h1>Welcome to My Web Page</h1>
-    <nav>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Capstone Symposium Website">
+    <meta name="author" content="AUTHOR">
+    <meta name="keywords" content="KEYWORD SECTION ">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <title>Capstone Symposium 2023 - Mechanical</title>
+    <link rel="stylesheet" href="../style/main.css">
+    <style>@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');</style>
+  </head>
+  <body>
+    <!-- NavBar Section  -->
+    <div class="navbar" role="navigation">
+      <div class="navUrl">
+        <h1 id="title"><a href="/">Mechanical Engineering Capstone Symposium 2023</a></h1>
+        <label for="toggle">&#9776;</label>
+        <input type="checkbox" id="toggle" data-toggle-content="0C994">
+        <ul>
+          <li><a href="#" class="navOpt navCurrentPage" id="teams">Teams</a></li>
+          <li><a href="#" class="navOpt" id="schedule">Schedule</a></li>
+          <li><a href="#" class="navOpt" id="register">Register</a></li>
+          <li><a href="#" class="navOpt" id="voting">Voting</a></li>
+          <li><a href="#" class="navOpt" id="donors">Donors</a></li>
+        </ul>
+      </div>
+      <div id="timeBox">
+        <div><p id="location"></p></div>
+        <div><p id="temp"></p></div>
+        <div id="icon"></div>
+        <p id="time"></p>
+      </div>
+    </div>
+    <!-- End of NavBar Section -->
+    <div id="teamBio">
+      <h2>Team A</h2>
+      <p>Sponsor: ____</p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec facilisis justo sit amet accumsan porta. Cras augue neque, blandit sit amet nisl quis, mattis elementum sem. Nam quis condimentum ex. Suspendisse tincidunt augue in nulla dictum vehicula. Aliquam eu tempus eros, sed dignissim lorem. In nec ante nibh. Sed lacinia odio quis felis consectetur facilisis. Fusce vel ullamcorper est. Nulla ornare iaculis ante, eget lacinia nulla mattis eu. 
+      </p>
+      <h3>Team Members</h3>
+      <h4>Anne Burrell</h4>
+      <p>
+        Aliquam ut libero ac mi sollicitudin hendrerit ut id arcu. Mauris ultricies iaculis tellus sed maximus. Nullam feugiat sem non nunc blandit ultrices. Integer tincidunt magna quam, nec accumsan urna malesuada a. Praesent ut elementum erat. Vivamus in dignissim arcu, id volutpat sem. In hac habitasse platea dictumst. Donec facilisis odio mauris, at gravida urna laoreet at. Suspendisse potenti. Vestibulum elementum orci nisi, nec faucibus libero volutpat nec. Nullam quis egestas dui. Vivamus feugiat arcu risus, vel tincidunt nisl porta a. Etiam maximus tristique erat, vitae ornare quam efficitur vel. Etiam sodales, ante id pretium dictum, nulla felis ornare ante, quis ornare nisi urna at massa. Fusce suscipit ex et tortor interdum maximus vehicula in lorem. 
+      </p>
+      <h4>Martha Stewart</h4>
+      <p>
+        In mattis ante elit, in tincidunt ex tincidunt eget. Vivamus luctus lorem neque, vehicula ultricies arcu convallis vitae. Proin ac porttitor nisi, vitae hendrerit urna. Aliquam viverra ante at tortor sodales, venenatis aliquet nibh faucibus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi dolor nibh, interdum quis eros at, cursus suscipit elit. Sed tristique, lectus eu dictum mattis, mi arcu convallis tortor, non consectetur magna diam ut nibh. Cras porttitor leo leo, ac fringilla libero suscipit eu. Duis malesuada pulvinar mi, in sodales tortor sollicitudin in. Cras egestas maximus nisl nec pellentesque. Fusce pretium tincidunt nisi, sed ultricies risus elementum at. Sed neque velit, imperdiet in nunc a, malesuada semper odio. Cras euismod turpis ac consectetur auctor. Cras a dolor facilisis turpis accumsan rutrum eget ut lacus. Suspendisse nisl velit, pharetra vitae erat a, venenatis gravida eros
+      </p>
+      <h4>Julia Child</h4>
+      <p>
+        
+      </p>
+    </div>
 
-  <main>
-    <section>
-      <h2>About</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum cursus purus id enim facilisis, et rutrum libero pretium.</p>
-    </section>
-
-    <section>
-      <h2>Services</h2>
-      <ul>
-        <li>Service 1</li>
-        <li>Service 2</li>
-        <li>Service 3</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>Contact</h2>
-      <form>
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
-        <br>
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-        <br>
-        <input type="submit" value="Submit">
-      </form>
-    </section>
-  </main>
-
-  <footer>
-    <p>&copy; 2023 My Web Page. All rights reserved.</p>
-  </footer>
-
-  <script src="script.js"></script>
-</body>
+    <!-- Start of Footer Section -->
+    <footer>
+      <p>Created by the ICS graduating class of 2023</p>
+      <p>&COPY; 2023 Camosun College</p>
+    </footer>
+      <!-- End of Footer Section -->
+  </body>
 </html>

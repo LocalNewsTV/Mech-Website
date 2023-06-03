@@ -6,9 +6,11 @@
  *****************************************************************************/
 /*
     {
-        id: "team_"
-        title: "Team _"
-        href: '/team_.html"
+        id: "team_",
+        title: "Team _",
+        href: '/team_.html",
+        sourceImage: "",
+        description: ""
     },
  */
 projects = [
