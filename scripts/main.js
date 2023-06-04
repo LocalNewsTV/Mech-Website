@@ -5,6 +5,9 @@ newE = (type) => document.createElement(type);
  * @description - Creates team cards to be used on the dom
 ********************************************************************************/
 const projectCardMaker = (project) => {
+    const cardAnch = newE('a');
+    cardAnch.href = project.href;
+    
     const cardMain = newE('div');
     $(cardMain).addClass('projectCard');
 
@@ -34,12 +37,13 @@ const projectCardMaker = (project) => {
 
     const button = newE('button');
     $(button).on('click', ()=>{window.location.href=`${project.href}`});
-    $(button).html("More");
+    $(button).html("Learn More");
     const buttonCont = newE('div');
     $(buttonCont).addClass('buttonCont');
     $(buttonCont).append(button);
     // $(cardBody).append(button);
     $(cardMain).append(card, buttonCont);
+    $(cardMain).on('click', () => { window.location.href=project.href; } );
     return cardMain;
 }
 /******************************************************************************* 
@@ -70,4 +74,3 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         });
     });
 });
-
