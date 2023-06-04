@@ -4,13 +4,22 @@ body, html {
   font-family: 'Open Sans', sans-serif;
   padding: 0;
   margin: 0;
-  color: white;
+  color: black;
+  background-color: white;
+}
+h1,h2,h3,h4,h5,h6 {
+  font-family: 'Roboto', 'sans-serif';
+  font-weight: 400;
 }
 h2 {
   color: black;
 }
+hr {
+  width: 35%;
+  margin: 25pt auto;
+}
 /*Quick CSS Classes*/
-.bb { border: 1px solid black; }
+
 .bgg { background-color:rgba(59, 59, 56, .8) }
 .pt { 
   padding-top: 70px; /*offsets navbar*/
@@ -67,6 +76,7 @@ a:hover {
   left: 0;
   width: 100%;
   background: #93BE37;
+  border-bottom: 1px solid black;
 }
 .navbar a {
   text-decoration: none;
@@ -86,6 +96,9 @@ a:hover {
   text-align: center;
   font-size: 1.5em;
   overflow: hidden;
+  font-family: 'Roboto', 'sans-serif';
+  font-weight:400;
+  padding: 0 5pt;
 }
 #toggle:checked + .menu {
   display: flex;
@@ -93,13 +106,69 @@ a:hover {
   align-items: center;
   justify-content: center;
 }
-
+/***************************************************
+  Logo section
+****************************************************/
+#logoSection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.logoContainer {
+  background-color: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 30dvh;
+  padding-top: 125pt;
+}
+.bannerTitle {
+  font-family: 'Roboto', 'sans-serif';
+  text-align: center;
+  font-size: 3.5em;
+  color: black;
+  text-shadow: rgb(194, 116, 14) 2pt 1pt;
+  width: 100%;
+  font-weight: bold;
+}
+/*************************************
+  Greeting Section
+*************************************/
+#greetingSection {
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ flex-direction: center;
+ width: 100%;
+ height: auto;
+ padding: 20pt 0;
+}
+.greetingContainer {
+  max-width: 900px;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+.greetingContainer h2{
+  width: 100%;
+  text-align: center;
+}
+blockquote {
+  font-style: italic;
+}
+figcaption {
+  width: 80%;
+  font-weight: 700;
+  text-align: right;
+}
 /***************************************************
   Projects Section (Mobile)
 ***************************************************/
 #projects {
   overflow: auto;
-  background-color: rgb(148, 148, 148);
+  background-color: inherit;
 }
 #projects h1{ 
   padding: 2px 5px;
@@ -121,7 +190,6 @@ a:hover {
   width: 325px;
   max-height: 450px;
   padding: 0;
-  /* margin: 5px; */
   background: white;
   color: black;
   overflow: hidden;
@@ -130,6 +198,9 @@ a:hover {
   transform: scale(0.9);
   border-left: 1px solid rgb(194,194,194);
   border-bottom: 1px solid rgb(194,194,194);
+}
+.projectTitle {
+  font-size: 24pt;
 }
 .projectCard .imgCont {
   display: flex;
@@ -230,6 +301,13 @@ footer input {
     width: auto;
     text-align: left;
   }
+  .bannerTitle{
+    width: auto;
+  }
+  .logoContainer {
+    flex-direction: row;
+    max-width: 750pt;
+  }
   /*************************************
       Navbar CSS (PC)
   *************************************/
@@ -256,8 +334,6 @@ footer input {
   ***************************************************/
   #projects {
       flex-direction: column;
-      border-top: 1px solid black;
-      border-bottom: 1px solid black;
   }
   /***************************************************
       Scrollbar CSS
