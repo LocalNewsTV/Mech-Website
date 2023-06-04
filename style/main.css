@@ -6,6 +6,9 @@ body, html {
   margin: 0;
   color: white;
 }
+h2 {
+  color: black;
+}
 /*Quick CSS Classes*/
 .bb { border: 1px solid black; }
 .bgg { background-color:rgba(59, 59, 56, .8) }
@@ -14,7 +17,7 @@ body, html {
   padding-bottom: 15px;
 } 
 .full {
-  min-height: 100vh;
+  min-height: 100dvh;
   width: 100%;
   display: flex;
   flex-direction: column;
