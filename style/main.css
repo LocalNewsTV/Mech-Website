@@ -96,6 +96,7 @@ a:hover {
 ***************************************************/
 #projects {
   overflow: auto;
+  background-color: rgb(148, 148, 148);
 }
 #projects h1{ 
   padding: 2px 5px;
@@ -122,8 +123,10 @@ a:hover {
   color: black;
   overflow: hidden;
   border-radius: 8pt;
-  box-shadow: black 2pt 1pt;
+  box-shadow: rgb(194, 194, 194) 4pt 2pt;
   transform: scale(0.9);
+  border-left: 1px solid rgb(194,194,194);
+  border-bottom: 1px solid rgb(194,194,194);
 }
 .projectCard .imgCont {
   display: flex;
