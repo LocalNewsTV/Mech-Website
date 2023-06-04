@@ -2,44 +2,48 @@
 <html lang="en">
   <head>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Capstone Symposium Website">
-    <meta name="author" content="AUTHOR">
-    <meta name="keywords" content="KEYWORD SECTION ">
-    <title>Capstone Symposium 2023 - Mechanical</title>
-    <link rel="icon" type="image/x-icon" href="images/favicon-32x32.png">
-    <link rel="stylesheet" href="style/main.css">
-    <style>@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');</style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Capstone Symposium Website" />
+    <meta name="author" content="AUTHOR" />
+    <meta name="keywords" content="KEYWORD SECTION " />
+    <link rel="icon" type="image/x-icon" href="../images/favicon-32x32.png">
+    <title>Symposium Sponsors</title>
+    <link rel="stylesheet" href="style/main.css" />
+    <link rel="stylesheet" href="style/teamBio.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+    </style>
   </head>
+
   <body>
     <!-- NavBar Section  -->
     <div class="navbar" role="navigation">
       <div class="navUrl">
         <h1 id="title">
-          <!-- UPDATE URL  -->
           <a href="index.html">Mechanical Engineering Capstone Symposium 2023</a>
         </h1>
         <label for="toggle">&#9776;</label>
         <input type="checkbox" id="toggle" data-toggle-content="0C994" />
         <ul class="menu">
           <li>
-            <a href="index.html" class="navOpt navCurrentPage" id="teams">Teams</a>
+            <a href="index.html" class="navOpt" id="teams">Teams</a>
           </li>
           <li><a href="schedule.html" class="navOpt" id="schedule">Schedule</a></li>
           <li><a href="#" class="navOpt" id="register">Register</a></li>
           <li><a href="#" class="navOpt" id="voting">Voting</a></li>
-          <li><a href="sponsors.html" class="navOpt" id="donors">Sponsors</a></li>
+          <li><a href="sponsors.html" class="navOpt navCurrentPage" id="sponsors">Sponsors</a></li>
         </ul>
       </div>
     </div>
     <!-- End of NavBar Section -->
-    <!-- Start of Projects Section -->
-    <div id="projects" class="pt full">
-      <h2 class="bgg bb projectTitle">Teams</h2>
-      <div id="projectsBody"></div>   
+    <div class="full">
+      <h2>
+        Sponsors to be announced...
+      </h2>
     </div>
-    <!-- End of Projects Section -->
+
+
     <!-- Start of Footer Section -->
     <footer>
       <img src="images/Camosun_Logo.png" height="70" width="180"></img>
@@ -47,14 +51,13 @@
         <p>Created by the ICS graduating class of 2023</p>
         <p>&COPY; 2023 Camosun College</p>
       </div>
+      <!-- UPDATE BUTTON DIR -->
       <input
         type="button"
-        onClick="location.href='/'"
+        onClick="location='index.html'"
         value="Home"
       />
     </footer>
-      <!-- End of Footer Section -->
-    <script src="scripts/projects.js"></script>
-	  <script src="scripts/main.js"></script>
+    <!-- End of Footer Section -->
   </body>
 </html>
