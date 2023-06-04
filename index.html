@@ -9,6 +9,7 @@
     <meta name="keywords" content="KEYWORD SECTION ">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     <title>Capstone Symposium 2023 - Mechanical</title>
+    <link rel="icon" type="image/x-icon" href="../images/favicon-32x32.png">
     <link rel="stylesheet" href="style/main.css">
     <style>@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');</style>
   </head>
@@ -16,22 +17,21 @@
     <!-- NavBar Section  -->
     <div class="navbar" role="navigation">
       <div class="navUrl">
-        <h1 id="title"><a href="/">Mechanical Engineering Capstone Symposium 2023</a></h1>
+        <h1 id="title">
+          <!-- UPDATE URL  -->
+          <a href="/Mech-Website">Mechanical Engineering Capstone Symposium 2023</a>
+        </h1>
         <label for="toggle">&#9776;</label>
-        <input type="checkbox" id="toggle" data-toggle-content="0C994">
-        <ul>
-          <li><a href="#" class="navOpt navCurrentPage" id="teams">Teams</a></li>
+        <input type="checkbox" id="toggle" data-toggle-content="0C994" />
+        <ul class="menu">
+          <li>
+            <a href="/" class="navOpt navCurrentPage" id="teams">Teams</a>
+          </li>
           <li><a href="#" class="navOpt" id="schedule">Schedule</a></li>
           <li><a href="#" class="navOpt" id="register">Register</a></li>
           <li><a href="#" class="navOpt" id="voting">Voting</a></li>
           <li><a href="#" class="navOpt" id="donors">Donors</a></li>
         </ul>
-      </div>
-      <div id="timeBox">
-        <div><p id="location"></p></div>
-        <div><p id="temp"></p></div>
-        <div id="icon"></div>
-        <p id="time"></p>
       </div>
     </div>
     <!-- End of NavBar Section -->
@@ -43,8 +43,16 @@
     <!-- End of Projects Section -->
     <!-- Start of Footer Section -->
     <footer>
-      <p>Created by the ICS graduating class of 2023</p>
-      <p>&COPY; 2023 Camosun College</p>
+      <img src="/images/Camosun_Logo.png" height="70" width="180"></img>
+      <div>
+        <p>Created by the ICS graduating class of 2023</p>
+        <p>&COPY; 2023 Camosun College</p>
+      </div>
+      <input
+        type="button"
+        onClick="location.href='/'"
+        value="Home"
+      />
     </footer>
       <!-- End of Footer Section -->
     <script src="scripts/projects.js"></script>

@@ -1,0 +1,106 @@
+#teamBio {
+  display: flex;
+  padding: 115pt 10px 30pt 10px;
+  flex-direction: column;
+  /* width: 100%; */
+  min-height: 100dvh;
+  align-items: center;
+  justify-content: center;
+  color: black;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding: 0;
+  margin: 0;
+}
+h2 {
+  font-size: 2.5em;
+}
+h3 {
+  font-size: 1.75em;
+}
+h4,
+h3 {
+  width: 100%;
+  text-align: center;
+}
+iframe {
+  width: 400px;
+  height: 225px;
+}
+#bioContainer {
+  display: flex;
+  border-radius: 10pt;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+  letter-spacing: 0.025em;
+}
+.teamMember {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  padding: 5pt;
+}
+.teamMemberImage {
+  margin: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.teamMemberImage img {
+  height: 150px;
+  width: 150px;
+  object-fit: scale-down;
+}
+.teamMemberBio {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.videoContainer {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+@media only screen and (min-width: 900px) {
+  #bioContainer {
+    width: 100%;
+    max-width: 1000px;
+  }
+  h4, h3 {
+    width: auto;
+    text-align: left;
+  }
+  .videoContainer {
+    display: flex;
+  }
+  .teamMember {
+    flex-direction: row;
+  }
+  h4 {
+    width: auto;
+    text-align: left;
+  }
+  iframe {
+    padding-top: 40px;
+    width: 560px;
+    height: 315px;
+  }
+  .teamMemberImage {
+    width: auto;
+    margin-right: 20pt;
+  }
+}
