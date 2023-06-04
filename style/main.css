@@ -21,21 +21,38 @@ body, html {
   justify-content: center;
   align-items: center;
 } 
+label {
+  font-size: 24pt;
+}
 .navUrl ul {
   list-style: none;
-  display: flex;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+.navUrl ul li {
+  width: 100%;
+  text-align: center;
+  padding: 5px;
+  font-size: 16pt;
+}
+
+
+.navUrl ul li:hover {
+  background-color: rgb(28, 128, 14);
 }
 a:hover {
   cursor: pointer;
 }
 .navbar .navCurrentPage {
-  color: red;
+  color: rgb(221, 80, 24);
 }
 /*************************************
   Navbar CSS (mobile)
 *************************************/
 /*NavbarCSS defaulting to mobile*/
 .navbar {
+  margin: 0;
   height: auto; /*Dynamic sizing for mobile*/
   display: flex;
   flex-direction: column;
@@ -46,17 +63,12 @@ a:hover {
   top: 0;
   left: 0;
   width: 100%;
-  background: #93BF37;
+  background: #93BE37;
 }
 .navbar a {
   text-decoration: none;
   color: #000;
-  margin: 5px;
-}
-label{
-  margin-top: -10px;
-  margin-bottom: 5px;
-  font-size: 26px;
+  padding: 5px;
 }
 .navUrl { 
   display: flex;
@@ -67,7 +79,10 @@ label{
 .menu, 
 #toggle { display: none; }
 #title {
-  font-size: 20px;
+  width: 100%;
+  text-align: center;
+  font-size: 1.5em;
+  overflow: hidden;
 }
 #toggle:checked + .menu {
   display: flex;
@@ -153,46 +168,38 @@ button:hover {
   Footer Section (Mobile)
 **************************************/
 footer {
+  margin: 0;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   background: slategray;
-  width: 100%;
-  height: auto;
+  height: 70px;
   border-top: 1px solid black;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   text-align: center;
-  background: rgb(59, 59, 56);
+  background: #5A5A5A;
   color: white;
   overflow: hidden;
-  padding: 10px;
+  padding: 10px 20px;
 }
 footer p {
-  margin: 2px;
+  padding: 2px;
+  margin: 0;
   font-size: 14px;
 }
-/*************************************
-  ScrollUp box (Mobile)
-*************************************/
-.scrollUp a { 
-  text-decoration: none; 
-  color: lightgray;
+footer img {
+  height: 70px;
+  object-fit: scale-down;
 }
-.scrollUp{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 10px;
-  z-index: 2;
-  position: fixed;
-  bottom: 20px;
-  right: 30px;
-  background-color: black;
-  font-size: 36px;
-  height: 35px;
-  width: 35px;
-  padding: 0;
-  margin: 0;
+footer input {
+  width: 55pt;
+  height: 25pt;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+@media only screen and (max-width: 899px) {
+  .navUrl ul li:nth-child(even) {background-color: #93968c;}
+  .navUrl ul li:nth-child(odd) {background-color: #70726e;}
 }
 /*************************************
   Media query for non-cell phones
@@ -200,20 +207,9 @@ footer p {
 @media only screen and (min-width: 900px) {
   .full { flex-direction: row; }
   label { display: none }
-  #background {
-      display: flex;
-  }
-  #background-video { 
-      display: flex;
-      width: 100%;
-      height: 100%;
-      background-position: center;
-      position: fixed;  /* bg slides without this */ 
-      object-fit: fill; /* lets background fit screen instead of cropping out.*/
-      left: 0;  
-      right: 0;
-      top: 0;
-      bottom: 0;
+  #title {
+    width: auto;
+    text-align: left;
   }
   /*************************************
       Navbar CSS (PC)
@@ -232,18 +228,10 @@ footer p {
   .navUrl{flex-direction: row;}
   .menu{ 
       display: flex;
-      margin-left: 5px;
   }
-  .menu a { margin: 5px; }
-  #timeBox {
-      margin-right: 10px;
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      justify-content: center;
+  .navUrl ul li {
+    width: auto;
   }
-  #time { padding-right: 40px; }
-
   /***************************************************
       Projects Section (PC)
   ***************************************************/
@@ -252,8 +240,6 @@ footer p {
       border-top: 1px solid black;
       border-bottom: 1px solid black;
   }
-
-
   /***************************************************
       Scrollbar CSS
   ***************************************************/

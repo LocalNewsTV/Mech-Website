@@ -17,7 +17,7 @@ projects = [
   {
     id: "teamA",
     title: "Team A",
-    href: "teams/teamtemplate.html",
+    href: "teams/teamExample.html",
     sourceImage: "https://fakeimg.pl/325x200",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In hendrerit turpis in arcu sodales, id convallis sem bibendum. Pellentesque condimentum mollis venenatis.",
@@ -25,7 +25,7 @@ projects = [
   {
     id: "teamB",
     title: "Team B",
-    href: "teams/teamtemplate.html",
+    href: "teams/teamExample.html",
     sourceImage: "https://fakeimg.pl/325x200",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In hendrerit turpis in arcu sodales, id convallis sem bibendum. Pellentesque condimentum mollis venenatis.",
@@ -33,7 +33,7 @@ projects = [
   {
     id: "teamC",
     title: "Team C",
-    href: "teams/teamtemplate.html",
+    href: "teams/teamExample.html",
     sourceImage: "https://fakeimg.pl/325x200",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In hendrerit turpis in arcu sodales, id convallis sem bibendum. Pellentesque condimentum mollis venenatis.",
@@ -41,7 +41,7 @@ projects = [
   {
     id: "teamD",
     title: "Team D",
-    href: "teams/teamtemplate.html",
+    href: "teams/teamExample.html",
     sourceImage: "https://fakeimg.pl/325x200",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In hendrerit turpis in arcu sodales, id convallis sem bibendum. Pellentesque condimentum mollis venenatis.",
@@ -49,7 +49,7 @@ projects = [
   {
     id: "teamE",
     title: "Team E",
-    href: "teams/teamtemplate.html",
+    href: "teams/teamExample.html",
     sourceImage: "https://fakeimg.pl/325x200",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In hendrerit turpis in arcu sodales, id convallis sem bibendum. Pellentesque condimentum mollis venenatis.",
@@ -57,7 +57,7 @@ projects = [
   {
     id: "teamF",
     title: "Team F",
-    href: "teams/teamtemplate.html",
+    href: "teams/teamExample.html",
     sourceImage: "https://fakeimg.pl/325x200",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In hendrerit turpis in arcu sodales, id convallis sem bibendum. Pellentesque condimentum mollis venenatis.",
@@ -65,7 +65,7 @@ projects = [
   {
     id: "teamG",
     title: "Team G",
-    href: "teams/teamtemplate.html",
+    href: "teams/teamExample.html",
     sourceImage: "https://fakeimg.pl/325x200",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In hendrerit turpis in arcu sodales, id convallis sem bibendum. Pellentesque condimentum mollis venenatis.",
@@ -73,7 +73,7 @@ projects = [
   {
     id: "teamH",
     title: "Team H",
-    href: "teams/teamtemplate.html",
+    href: "teams/teamExample.html",
     sourceImage: "https://fakeimg.pl/325x200",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In hendrerit turpis in arcu sodales, id convallis sem bibendum. Pellentesque condimentum mollis venenatis.",
@@ -81,7 +81,7 @@ projects = [
   {
     id: "teamI",
     title: "Team I",
-    href: "teams/teamtemplate.html",
+    href: "teams/teamExample.html",
     sourceImage: "https://fakeimg.pl/325x200",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In hendrerit turpis in arcu sodales, id convallis sem bibendum. Pellentesque condimentum mollis venenatis.",
