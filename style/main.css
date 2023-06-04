@@ -117,12 +117,13 @@ a:hover {
   width: 325px;
   max-height: 450px;
   padding: 0;
-  margin: 5px;
+  /* margin: 5px; */
   background: white;
   color: black;
   overflow: hidden;
   border-radius: 8pt;
   box-shadow: black 2pt 1pt;
+  transform: scale(0.9);
 }
 .projectCard .imgCont {
   display: flex;
@@ -133,7 +134,7 @@ a:hover {
   max-width: 325px;
   overflow: hidden;
   object-fit: contain;
-
+  
 }.contentText {
   display: flex;
   margin: 8pt;
