@@ -172,7 +172,7 @@ footer {
   display: flex;
   flex-direction: row;
   background: slategray;
-  height: 70px;
+  min-height: 70px;
   border-top: 1px solid black;
   justify-content: space-between;
   align-items: center;
