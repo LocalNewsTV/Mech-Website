@@ -1,0 +1,94 @@
+p {
+    margin-block-start: 0;
+}
+
+#sponsors {
+    overflow: auto;
+    background-color: inherit;
+    flex-direction: column;
+}
+
+#sponsorsBody {
+    height: auto;
+    min-height: 70vh;
+    object-fit: contain;
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: center;
+}
+
+.sponsorCard {
+    width: 400px;
+    max-height: 325px;
+    padding: 0;
+    background: white;
+    color: black;
+    border-radius: 8pt;
+    box-shadow: rgb(194, 194, 194) 4pt 2pt;
+    transform: scale(0.97);
+    border-left: 1px solid rgb(194, 194, 194);
+    border-bottom: 1px solid rgb(194, 194, 194);
+}
+
+.sponsorTitle {
+    font-size: 24pt;
+    margin-top: auto;
+    margin-bottom: 0%;
+}
+
+.sponsorCard .imgCont {
+    display: flex;
+    justify-content: center;
+    width: auto;
+    margin: 8pt;
+    max-height: 200px;
+    max-width: 400px;
+    overflow: hidden;
+    object-fit: contain;
+
+}
+
+.sponsorCard h2 {
+    margin: 0;
+    padding: 5pt 0;
+    font-size: 18pt;
+}
+
+.contentTextTitle h2 {
+    display: block;
+    text-align: center;
+}
+
+.buttonCont {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 8pt;
+}
+
+.sponsorCard button {
+    border: none;
+    font-family: 'Open Sans', sans-serif;
+    background-color: inherit;
+    color: gray;
+    font-weight: 600;
+    font-size: 14pt;
+    width: auto;
+    padding: 0;
+    margin: 0;
+    height: 2rem;
+}
+
+.sponsorCard:hover {
+    cursor: pointer;
+    transition: 0.5s;
+    background-color: #e0e0e0;
+}
+
+button:hover {
+    cursor: pointer;
+}
