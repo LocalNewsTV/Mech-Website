@@ -1,0 +1,39 @@
+.container {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 90px; /* navbar height 70px */
+}
+
+.table-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 5px white solid;
+  width: 90%;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+.schedule-table {
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: collapse;
+  padding: 10px;
+}
+
+.schedule-table th, td {
+  padding: 12px;
+  text-align: center;
+}
+
+.schedule-table thead {
+  background-color: #93BE37;
+}
+
+.schedule-table tbody tr:nth-child(even) {
+  background-color: #e7e7e7;
+}
