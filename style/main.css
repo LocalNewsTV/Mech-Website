@@ -390,7 +390,7 @@ footer input {
       Scrollbar CSS
   ***************************************************/
   /* Scrollbar Styling */
-  ::-webkit-scrollbar { width: 50px; }
+  ::-webkit-scrollbar { width: 0px; }
   /* Track */
   ::-webkit-scrollbar-track { border-radius: 10px; }
   /* Handle */
