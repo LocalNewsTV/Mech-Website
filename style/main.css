@@ -65,7 +65,7 @@ label {
   width: 100%;
   text-align: center;
   padding: 0 5pt;
-  margin: 5pt 0;
+  margin: 0;
   font-size: 16pt;
 }
 
@@ -124,12 +124,6 @@ a:hover {
   padding: 0 5pt;
 }
 
-#toggle:checked + .menu {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
 /***************************************************
   Logo section
 ****************************************************/
@@ -338,8 +332,14 @@ footer input {
   border-radius: 5px;
 }
 @media only screen and (max-width: 899px) {
-  .navUrl ul li:nth-child(even) {background-color: #93968c;}
-  .navUrl ul li:nth-child(odd) {background-color: #70726e;}
+  .navUrl ul li:nth-child(even) {background-color: var(--color-b)}
+  .navUrl ul li:nth-child(odd) {background-color: var(--color-c)}
+  #toggle:checked + .menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 /*************************************
@@ -358,6 +358,9 @@ footer input {
   .logoContainer {
     flex-direction: row;
     max-width: 750pt;
+  }
+  .navUrl ul li {
+    margin: 5pt 0;
   }
   /*************************************
       Navbar CSS (PC)
