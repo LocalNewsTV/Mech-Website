@@ -27,7 +27,7 @@ const projectCardMaker = (project) => {
     $(cardBody).addClass('contentText');
     $(card).append(cardBody);
 
-    const cardTitle = newE('h2');
+    const cardTitle = newE('h3');
     $(cardTitle).html(project.title);
     $(cardBody).append(cardTitle);
 
@@ -40,7 +40,11 @@ const projectCardMaker = (project) => {
     $(button).html("Learn More");
     const buttonCont = newE('div');
     $(buttonCont).addClass('buttonCont');
-    $(buttonCont).append(button);
+
+    const gear = newE('img');
+    gear.src = "../images/gear.svg";
+    $(gear).addClass('gear-item');
+    $(buttonCont).append(button, gear);
     // $(cardBody).append(button);
     $(cardMain).append(card, buttonCont);
     $(cardMain).on('click', () => { window.location.href=project.href; } );
