@@ -42,7 +42,7 @@ const projectCardMaker = (project) => {
     $(buttonCont).addClass('buttonCont');
 
     const gear = newE('img');
-    gear.src = "../images/gear.svg";
+    gear.src = "images/gear.svg";
     $(gear).addClass('gear-item');
     $(buttonCont).append(button, gear);
     // $(cardBody).append(button);
