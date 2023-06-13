@@ -113,11 +113,10 @@ $(document).ready(()=>{
     var sPath = window.location.pathname;
     var sPage = sPath.substring(sPath.lastIndexOf('/') + 1);
 
-    if(sPage == "index.html") {
-        loadProjects();
-    }
-    else if(sPage == "sponsors.html"){
+    if(sPage === "sponsors.html"){
         loadSponsors();
+    } else {
+        loadProjects();
     }
 });
 
