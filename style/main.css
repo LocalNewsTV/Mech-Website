@@ -6,6 +6,11 @@
   --color-accent: #DA785E;
   --color-light-blue: #50A6DC;
 }
+
+#teamBio {
+  background: var(--color-c)
+}
+
 .hr-a {
   background: var(--color-b);
 }
@@ -330,6 +335,9 @@ footer input {
   height: 25pt;
   border: 1px solid black;
   border-radius: 5px;
+}
+footer input:hover {
+  cursor: pointer;
 }
 @media only screen and (max-width: 899px) {
   .navUrl ul li:nth-child(even) {background-color: var(--color-b)}
