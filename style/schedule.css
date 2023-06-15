@@ -1,11 +1,43 @@
 .container {
+  background: linear-gradient(var(--color-c),var(--color-b));
   min-height: 100vh;
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 90px; /* navbar height 70px */
+  padding-top: 100px; /* navbar height 70px */
+}
+
+.schedule-gear {
+  width: 15%;
+  filter: drop-shadow(4px 5px 2px black);
+}
+
+.schedule-greeting {
+  
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 10px;
+  padding: 0 5%;
+}
+
+.text-container {
+  width: 90%;
+  display: flex;
+  justify-content: flex-start;
+  padding: 10px 10px 10px 20px;
+}
+
+.text-container h3 {
+  text-align: left;
+}
+
+.sub-title {
+  margin-bottom: 1rem;
+  padding: 0px 5px;
 }
 
 .table-container {
@@ -16,6 +48,7 @@
   width: 90%;
   margin: 10px;
   border-radius: 10px;
+  margin: 2rem 3px;
 }
 
 .schedule-table {
@@ -26,14 +59,53 @@
 }
 
 .schedule-table th, td {
-  padding: 12px;
+  padding: 15px;
   text-align: center;
+  font-size: 18px;
 }
 
 .schedule-table thead {
-  background-color: #93BE37;
+  background-color: black;
 }
 
 .schedule-table tbody tr:nth-child(even) {
-  background-color: #e7e7e7;
+  background-color: var(--color-d);
+}
+
+
+.table-link:hover {
+  font-size: 1.2rem;
+}
+
+.table-link:hover ~ hr {
+  width: 78px;
+}
+
+hr {
+  width: 0px;
+  height: 3px;
+  background: var(--underline);
+  border: var(--underline);
+  margin: auto;
+  transition: width 450ms ease-out;
+}
+
+.table-link {
+  text-decoration: none;
+  color: azure;
+  transition: all 200ms ease-out;
+}
+
+.highlight-text {
+  font-weight: bolder;
+  color: black;
+}
+
+@media only screen and (max-width: 600px) {
+  .schedule-gear {
+    width: 82px;
+  }
+  .container {
+    padding-top: 115px;
+  }
 }
