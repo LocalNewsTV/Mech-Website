@@ -1,11 +1,14 @@
 :root {
-  --color-a: #6291D1;
-  --color-b: #58A6E2; 
-  --color-c: #3F7CC4;
-  --color-d: #3745A6;
-  --color-accent: #DA785E;
-  --color-light-blue: #50A6DC;
+  --color-a: #138D80;
+  --color-b: #4D5051; 
+  --color-c: #138C7E;
+  --color-d: #129A89;
+  --color-accent: #0CF4D5;
+  --header-color: #1F2120;
   --underline: #d357f6;
+  --footer-color: #1F2120;
+  --nav-text: #FFF;
+  --schedule-text: azure;
 }
 
 #teamBio {
@@ -68,7 +71,11 @@ label {
   margin: 0;
 }
 .navUrl ul li {
-  width: 100%;
+  width: 100dvw;
+  min-height: 2.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
   padding: 0 5pt;
   margin: 0;
@@ -102,14 +109,14 @@ a:hover {
   top: 0;
   left: 0;
   width: 100%;
-  background: var(--color-light-blue);
+  background: var(--header-color);
   border-bottom: 1px solid black;
 }
 
 
 .navbar a {
   text-decoration: none;
-  color: #000;
+  color: var(--nav-text);
   padding: 5px;
 }
 .navUrl { 
@@ -122,6 +129,7 @@ a:hover {
 #toggle { display: none; }
 #title {
   margin: 0;
+  color: var(--nav-text);
   text-align: center;
   font-size: 1.5em;
   overflow: hidden;
@@ -158,8 +166,8 @@ hr {
   font-family: 'Roboto', 'sans-serif';
   text-align: center;
   font-size: 3.5em;
-  color: black;
-  text-shadow: rgb(194, 116, 14) 2pt 1pt;
+  color: #F1F1F1;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
   width: 100%;
   font-weight: bold;
 }
@@ -236,9 +244,9 @@ figcaption {
   border-radius: 8pt;
   box-shadow: black 2pt 1pt;
   /* transform: scale(0.9); */
-  border-left: 1px solid var(--color-light-blue);
-  border-right: 1px solid var(--color-accent);
-  border-bottom: 1px solid var(--color-accent);
+  border-left: 1px solid var(--header-color);
+  border-right: 1px solid #DA785E;
+  border-bottom: 1px solid #DA785E;
 }
 .projectTitle {
   font-size: 30pt;
@@ -312,7 +320,7 @@ footer {
   margin: 0;
   display: flex;
   flex-direction: row;
-  background: #3C359C;
+  background: var(--footer-color);
   min-height: 70px;
   border-top: 1px solid black;
   justify-content: space-between;
