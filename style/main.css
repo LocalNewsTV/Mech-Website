@@ -1,26 +1,26 @@
 :root {
   --color-a: #138D80;
   --color-b: #4D5051; 
-  --color-c: #138C7E;
+  --color-c: #A5CED4;
   --color-d: #129A89;
-  --color-accent: #0CF4D5;
-  --header-color: #1F2120;
+  --color-accent: #d88660;
+  --header-color: #0B4F6C;
+  --background-color: #E9EAEB;
   --underline: #d357f6;
-  --footer-color: #1F2120;
+  --footer-color: #0B4F6C;
   --nav-text: #FFF;
-  --schedule-text: azure;
 }
-
+.mech-logo {
+  filter: drop-shadow(1px 3px 1px black);
+}
 #teamBio {
-  background: var(--color-c)
+  background-color: var(--background-color);
 }
 
-.hr-a {
-  background: var(--color-b);
+.hr-a, .hr-b {
+  background-color: var(--background-color);
 }
-.hr-b {
-  background: var(--color-c);
-}
+
 hr {
   width: 100%;
   margin: 3em 33%;
@@ -28,17 +28,15 @@ hr {
   background-color: black;
   border: 1px solid black;
 }
-.mech-logo{
-  filter: drop-shadow(2px 2px 1px var(--color-accent));
-}
+
 body, html {
   height: 100%;
   width: 100%;
   font-family: 'Open Sans', sans-serif;
   padding: 0;
   margin: 0;
-  color: white;
-  background-color: white;
+  color: black;
+  background-color: var(--background-color);
 }
 h1,h2,h3,h4,h5,h6 {
   font-family: 'Roboto', 'sans-serif';
@@ -82,16 +80,11 @@ label {
   font-size: 16pt;
 }
 
-
-.navUrl ul li a:hover {
-  background-color: rgb(255,255,255,0.5);
-  border-radius: 8pt;
-}
 a:hover {
   cursor: pointer;
 }
 .navbar .navCurrentPage {
-  color: var(--color-accent);
+  color: black;
 }
 /*************************************
   Navbar CSS (mobile)
@@ -109,7 +102,7 @@ a:hover {
   top: 0;
   left: 0;
   width: 100%;
-  background: var(--header-color);
+  background-color: var(--header-color);
   border-bottom: 1px solid black;
 }
 
@@ -147,11 +140,9 @@ a:hover {
   justify-content: center;
   width: 100%;
   overflow: contain;
-  background: linear-gradient(var(--color-a), var(--color-b))  
+  background-color: inherit;  
 }
-hr {
-  background: var(--color-b)
-}
+
 .logoContainer {
   background-color: inherit;
   display: flex;
@@ -182,7 +173,7 @@ hr {
  width: 100%;
  height: auto;
  padding: 20pt 0;
- background: linear-gradient(var(--color-b), var(--color-c))
+ background: inherit;
 }
 .greetingContainer {
   max-width: 900px;
@@ -209,7 +200,6 @@ figcaption {
 #projects {
   overflow: auto;
   background-color: inherit;
-  background: linear-gradient(var(--color-c), var(--color-d));
   background-size: contain;
 }
 #projects h1{ 
@@ -221,6 +211,7 @@ figcaption {
   min-height: 70vh;
   object-fit: contain;
   padding: 5px;
+  margin-bottom: 2em;
   width: 95%;
   display: flex;
   flex-direction: row;
@@ -245,12 +236,10 @@ figcaption {
   box-shadow: black 2pt 1pt;
   /* transform: scale(0.9); */
   border-left: 1px solid var(--header-color);
-  border-right: 1px solid #DA785E;
-  border-bottom: 1px solid #DA785E;
 }
 .projectTitle {
   font-size: 30pt;
-  margin: 0;
+  margin: 0 0 1em 0;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 .projectCard .imgCont {
@@ -320,7 +309,7 @@ footer {
   margin: 0;
   display: flex;
   flex-direction: row;
-  background: var(--footer-color);
+  background-color: var(--footer-color);
   min-height: 70px;
   border-top: 1px solid black;
   justify-content: space-between;

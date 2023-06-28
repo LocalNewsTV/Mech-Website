@@ -47,7 +47,7 @@ iframe {
   letter-spacing: 0.025em;
   border-top: 1px solid black;
   border-bottom: 1px solid black;
-  background-color: #F1F1F1;
+  background-color: var(--background-color);
 }
 .teamMember {
   display: flex;
@@ -87,7 +87,7 @@ iframe {
   #bioContainer {
     width: 100%;
     max-width: 1000px;
-    border: 1pt solid black;
+    border: none;
     border-radius: 6pt;
     padding: 2.5em;
   }
