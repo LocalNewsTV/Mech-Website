@@ -3,7 +3,6 @@ p {
 }
 
 #sponsors {
-    overflow: auto;
     background-color: inherit;
     flex-direction: column;
 }
@@ -12,7 +11,7 @@ p {
     height: auto;
     min-height: 70vh;
     object-fit: contain;
-    width: 95%;
+    width: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -36,7 +35,7 @@ p {
 .sponsorTitle {
     font-size: 24pt;
     margin-top: auto;
-    margin-bottom: 0%;
+    margin-bottom: 0;
 }
 
 .sponsorCard .imgCont {
