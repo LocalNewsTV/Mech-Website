@@ -92,13 +92,15 @@ hr {
 
 .table-link {
   text-decoration: none;
-  color: azure;
+  color: var(--schedule-text);
   transition: all 200ms ease-out;
 }
 
 .highlight-text {
+  font-size: 1.1rem;
   font-weight: bolder;
-  color: black;
+  color: var(--color-accent);
+  text-shadow: 2px 2px 1px black;
 }
 
 @media only screen and (max-width: 600px) {
