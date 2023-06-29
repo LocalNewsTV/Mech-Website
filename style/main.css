@@ -10,9 +10,7 @@
   --footer-color: #0B4F6C;
   --nav-text: #FFF;
 }
-.mech-logo {
-  filter: drop-shadow(1px 3px 1px black);
-}
+
 #teamBio {
   background-color: var(--background-color);
 }
@@ -138,6 +136,7 @@ a:hover {
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 100dvh;
   width: 100%;
   overflow: contain;
   background-color: inherit;  
@@ -149,9 +148,12 @@ a:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: 30dvh;
+  min-height: 50dvh;
   object-fit: scale-down;
   padding-top: 125pt;
+}
+.logoContainer img {
+  height: 325pt;
 }
 .bannerTitle {
   font-family: 'Roboto', 'sans-serif';
