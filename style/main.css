@@ -147,13 +147,15 @@ a:hover {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  overflow:hidden;
   align-items: center;
   min-height: 50dvh;
   object-fit: scale-down;
-  padding-top: 125pt;
+  padding-top: 25dvh;
 }
 .logoContainer img {
-  height: 325pt;
+  width: 100dvw;
+  max-width: 275pt;
 }
 .bannerTitle {
   font-family: 'Roboto', 'sans-serif';
@@ -340,8 +342,8 @@ footer input:hover {
   cursor: pointer;
 }
 @media only screen and (max-width: 899px) {
-  .navUrl ul li:nth-child(even) {background-color: var(--color-b)}
-  .navUrl ul li:nth-child(odd) {background-color: var(--color-c)}
+  .navUrl ul li:nth-child(even) {background-color: #366c83}
+  .navUrl ul li:nth-child(odd) {background-color: #366072}
   #toggle:checked + .menu {
     display: flex;
     flex-direction: column;
