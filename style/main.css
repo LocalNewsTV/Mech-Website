@@ -3,12 +3,15 @@
   --color-b: #4D5051; 
   --color-c: #A5CED4;
   --color-d: #129A89;
-  --color-accent: #d88660;
+  --color-accent: #ff6e07;
   --header-color: #0B4F6C;
   --background-color: #E9EAEB;
   --underline: #d357f6;
   --footer-color: #0B4F6C;
   --nav-text: #FFF;
+  --schedule-heading: azure;
+  --schedule-a: #8eb4f9;
+  --schedule-b: #9fc6f2;
 }
 
 #teamBio {
@@ -59,6 +62,8 @@ h1,h2,h3,h4,h5,h6 {
 } 
 label {
   font-size: 24pt;
+  padding: 5px;
+  margin-right: 20px;
 }
 .navUrl ul {
   list-style: none;
@@ -78,11 +83,16 @@ label {
   font-size: 16pt;
 }
 
+.navOpt:hover {
+  transform: scale(1.1);
+}
+
 a:hover {
   cursor: pointer;
 }
 .navbar .navCurrentPage {
-  color: black;
+  font-weight: bold;
+  color: var(--schedule-b);
 }
 /*************************************
   Navbar CSS (mobile)
@@ -90,10 +100,11 @@ a:hover {
 /*NavbarCSS defaulting to mobile*/
 .navbar {
   margin: 0;
+  padding: 10px;
   height: auto; /*Dynamic sizing for mobile*/
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  /* flex-direction: column; */
+  justify-content: space-between;
   align-items: center;
   position: fixed;
   z-index: 1;
@@ -101,23 +112,28 @@ a:hover {
   left: 0;
   width: 100%;
   background-color: var(--header-color);
-  border-bottom: 1px solid black;
+  border-bottom: 2px solid black;
 }
 
+.titleLink {
+  margin-right: 15px;
+}
 
 .navbar a {
   text-decoration: none;
   color: var(--nav-text);
-  padding: 5px;
+  padding: 10px;
 }
-.navUrl { 
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
+
 .menu, 
 #toggle { display: none; }
+
+.menu {
+  top: 70px;
+  left: 0;
+  position: absolute;
+}
+
 #title {
   margin: 0;
   color: var(--nav-text);
@@ -126,7 +142,12 @@ a:hover {
   overflow: hidden;
   font-family: 'Roboto', 'sans-serif';
   font-weight:400;
-  padding: 0 5pt;
+}
+
+@media only screen and (max-width: 322px) {
+  .menu {
+    top: 95px;
+  }
 }
 
 /***************************************************
@@ -345,10 +366,7 @@ footer input:hover {
   .navUrl ul li:nth-child(even) {background-color: #366c83}
   .navUrl ul li:nth-child(odd) {background-color: #366072}
   #toggle:checked + .menu {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    display: block;
   }
 }
 
@@ -375,20 +393,19 @@ footer input:hover {
   /*************************************
       Navbar CSS (PC)
   *************************************/
-
   .navbar{ 
-      flex-direction: row;
-      height: 70px;
-      justify-content: left;
-      align-items: center;
-      padding-right: 20px;    
-      padding-left: 20px;
-      color: black;
-      box-shadow: 4px 2px;
+    flex-direction: row;
+    height: 70px;
+    justify-content: left;
+    align-items: center;
+    padding: 5px 20px;
+    color: black;
+    box-shadow: 0px 2px;
   }
   .navUrl{flex-direction: row;}
   .menu{ 
-      display: flex;
+    display: flex;
+    position: static;
   }
   .navUrl ul li {
     width: auto;
@@ -397,7 +414,7 @@ footer input:hover {
       Projects Section (PC)
   ***************************************************/
   #projects {
-      flex-direction: column;
+    flex-direction: column;
   }
   /***************************************************
       Scrollbar CSS
