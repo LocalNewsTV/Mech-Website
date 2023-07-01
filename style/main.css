@@ -255,8 +255,11 @@ figcaption {
   max-width: 325px;
   overflow: hidden;
   object-fit: contain;
-  
-}.contentText {
+}
+.projectCard .imgCont img {
+  object-fit: scale-down;
+}
+.contentText {
   display: flex;
   margin: 8pt;
   flex-direction: column;

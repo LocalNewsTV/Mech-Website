@@ -29,6 +29,7 @@ h3 {
   text-align: center;
 }
 iframe {
+  display: none;
   width: 375px;
   height: 225px;
 }
