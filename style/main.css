@@ -8,7 +8,7 @@
   --background-color: #E9EAEB;
   --underline: #d357f6;
   --footer-color: #0B4F6C;
-  --nav-text: #FFF;
+  --nav-text: #FFF;  
   --schedule-heading: azure;
   --schedule-a: #8eb4f9;
   --schedule-b: #9fc6f2;
@@ -142,6 +142,7 @@ a:hover {
   overflow: hidden;
   font-family: 'Roboto', 'sans-serif';
   font-weight:400;
+  padding: 0 5pt;
 }
 
 @media only screen and (max-width: 322px) {
@@ -252,6 +253,8 @@ figcaption {
 .projectCard {
   width: 325px;
   max-height: 450px;
+  display: flex;
+  flex-direction: column;
   padding: 0;
   background: linear-gradient(to bottom right, white, rgb(138, 146, 153));
   color: black;
@@ -283,9 +286,14 @@ figcaption {
 .contentText {
   display: flex;
   margin: 8pt;
+  overflow-y: scroll;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+}
+.contentText p {
+  max-height: 110px;
+  overflow-y: scroll;
 }
 .contentText p {
   margin: 0;
@@ -303,6 +311,7 @@ figcaption {
   padding: 8pt;
   background-position-x: 90%;
   background-position-y: 0%;
+  margin-top: auto;
 }
 .gear-item {
   height: 45px;
@@ -397,18 +406,18 @@ footer input:hover {
       Navbar CSS (PC)
   *************************************/
   .navbar{ 
-    flex-direction: row;
-    height: 70px;
-    justify-content: left;
-    align-items: center;
-    padding: 5px 20px;
-    color: black;
-    box-shadow: 0px 2px;
+      flex-direction: row;
+      height: 70px;
+      justify-content: left;
+      align-items: center;
+      padding: 5px 20px;
+      color: black;
+      box-shadow: 0px 2px;
   }
   .navUrl{flex-direction: row;}
   .menu{ 
-    display: flex;
-    position: static;
+      display: flex;
+      position: static;
   }
   .navUrl ul li {
     width: auto;
@@ -417,7 +426,7 @@ footer input:hover {
       Projects Section (PC)
   ***************************************************/
   #projects {
-    flex-direction: column;
+      flex-direction: column;
   }
   /***************************************************
       Scrollbar CSS

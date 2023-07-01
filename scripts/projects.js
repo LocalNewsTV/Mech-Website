@@ -70,4 +70,11 @@ projects = [
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In hendrerit turpis in arcu sodales, id convallis sem bibendum. Pellentesque condimentum mollis venenatis.",
   },
+  {
+    id: 'example',
+    title: 'Example Content',
+    href: 'teams/teamExample.html',
+    sourceImage: 'https://fakeimg.pl/325x200',
+    description: 'Example page with lorem ipsum content \n\n Lorem ipsum dolor sit amet, consectetur adipiscing elit. In hendrerit turpis in arcu sodales, id convallis sem bibendum. Pellentesque condimentum mollis venenatis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In hendrerit turpis in arcu sodales, id convallis sem bibendum. Pellentesque condimentum mollis venenatis.'
+  }
 ];
