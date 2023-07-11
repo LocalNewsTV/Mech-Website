@@ -16,11 +16,11 @@
 projects = [
   {
     id: "teamA",
-    title: "Team A",
+    title: "Dionysus Systems",
     href: "teams/teamA/",
     sourceImage: "teams/teamA/photos/team.jpeg",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In hendrerit turpis in arcu sodales, id convallis sem bibendum. Pellentesque condimentum mollis venenatis.",
+      "Dionysus systems is excited to be designing and manufacturing a mash press for Holocene Distilling Project. Our product will assist our client, Dorian Redden, in achieving his goal of carbon neutrality by allowing him to recover otherwise lost or wasted energy stored in the mash as fuel for his boiler.",
   },
   {
     id: "teamB",
