@@ -32,6 +32,7 @@ h3 {
   width: 100%;
   text-align: center;
 }
+
 #bioContainer {
   display: flex;
   flex-direction: column;
@@ -52,6 +53,7 @@ h3 {
   justify-content: center;
   height: auto;
   padding: 5pt;
+  margin-top: 5pt;
 }
 .teamMemberImage {
   margin: 0;
@@ -73,12 +75,10 @@ h3 {
   align-items: flex-start;
   justify-content: center;
 }
-.videoContainer {
-  display: flex;
-  width: 100%;
-  align-items: center;
-  justify-content: center;
+.teamMember:first-of-type {
+  margin-top: 0.75em;
 }
+
 .conclusion {
   margin-top: 1.25em;
 }
