@@ -89,6 +89,45 @@ const sponsorCardMaker = (sponsor) => {
     return cardMain;
 }
 
+const financialSponsorCardMaker = (sponsor) => {
+    const cardAnch = newE('a');
+    cardAnch.href = sponsor.href;
+
+    const cardMain = newE('div');
+    $(cardMain).addClass('financialSponsorCard');
+    $(cardMain).addClass(sponsor.tier);
+    const card = newE('div');
+    card.id = sponsor.id;
+    $(card).addClass('content');
+
+    const imageContainer = newE('div');
+    $(imageContainer).addClass('imgCont')
+    const cardImage = newE('img');
+    cardImage.src = sponsor.sourceImage;
+    cardImage.alt = sponsor.title;
+    cardImage.title = sponsor.title;
+    $(imageContainer).append(cardImage);
+    $(card).append(imageContainer);
+
+    const cardBody = newE('div');
+    $(cardBody).addClass('contentTextTitle');
+    $(card).append(cardBody);
+
+    // const cardTitle = newE('h2');
+    // $(cardTitle).html(sponsor.title);
+    // $(cardBody).append(cardTitle);
+
+    const button = newE('button');
+    $(button).on('click', ()=>{window.location.href=`${sponsor.href}`});
+    $(button).html("Learn More");
+    const buttonCont = newE('div');
+    $(buttonCont).addClass('buttonCont');
+    $(buttonCont).append(button);
+    $(cardMain).append(card, buttonCont);
+    $(cardMain).on('click', () => { window.location.href=sponsor.href; } );
+    return cardMain;
+}
+
 /******************************************************************************* 
  * @description - Iterates through each element in the projects array and appends the 
  * returned value from projectCardMaker() to the Projects Body
@@ -103,6 +142,9 @@ const loadSponsors = () => {
     sponsors.forEach((sponsor) => {
         $('#sponsorsBody').append(sponsorCardMaker(sponsor));
     });
+    financialSponsors.forEach((sponsor) => {
+        $('#financialSponsors').append(financialSponsorCardMaker(sponsor));
+    });
 }
 
 /******************************************************************************* 
@@ -115,6 +157,7 @@ $(document).ready(()=>{
 
     if(sPage === "sponsors.html"){
         loadSponsors();
+        loadFinancialSponsors();
     } else {
         loadProjects();
     }

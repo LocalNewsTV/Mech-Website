@@ -1,18 +1,33 @@
-p {
-    margin-block-start: 0;
-}
+
 
 #sponsor {
     background-color: inherit;
+    display: flex;
     flex-direction: column;
     padding-top: 100px;
 }
 
-#sponsorsBody {
+.sponsorIntro {
+    display: flex;
+    flex-direction: column;
+    max-width: 900pt;
+    padding: 10pt;
+}
+
+.sponsorIntro p {
+
+}
+.platinum{background-color: rgba(229, 228, 226, 0.9) !important;}
+.gold{background-color: rgba(255,223,0,0.2) !important;}
+.silver{background-color: rgba(192,192,192,0.35) !important;}
+.bronze{background-color: rgba(176,141,87,0.2) !important;}
+
+#sponsorsBody, #financialSponsors {
     height: auto;
     min-height: 70vh;
     object-fit: contain;
     width: 100%;
+    max-width: 1000pt;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -21,7 +36,7 @@ p {
     margin-bottom: 20px;
 }
 
-.sponsorCard {
+.sponsorCard, .financialSponsorCard {
     width: 400px;
     max-height: 325px;
     padding: 0;
@@ -34,40 +49,52 @@ p {
     border-bottom: 1px solid rgb(194, 194, 194);
 }
 
+.financialSponsorCard {
+    width: 400pt;
+}
 .sponsorTitle {
     font-size: 30pt;
+    text-align: center;
     margin-top: auto;
-    margin-bottom: 0;
+    margin: 1em 0 1em 0;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
+#eventSponsors {
+    margin-top: 3em;
+}
 #sponsor4 .imgCont {
     background-color: #E1CFC6;
 }
-.sponsorCard .imgCont {
+.sponsorCard .imgCont, .financialSponsorCard .imgCont {
     display: flex;
     justify-content: center;
     width: auto;
     margin: 8pt;
     height: 200px;
-    max-width: 400px;
     overflow: hidden;
     object-fit: contain;
-
 }
 
-.sponsorCard .imgCont img {
+.financialSponsorCard .imgCont {
+    max-width: 400pt;
+}
+
+.sponsorCard .imgCont img, .financialSponsorCard .imgCont img {
     display: flex;
     justify-content: center;
     width: auto;
     margin: 8pt;
     max-height: 200px;
+    width: 100%;
     max-width: 400px;
     overflow: hidden;
     object-fit: contain;
-
 }
-.sponsorCard h2 {
+.financialSponsorCard .imgCont img {
+    max-width: 350pt;
+}
+.sponsorCard h2, .financialSponsorCard h2 {
     margin: 0;
     padding: 5pt 0;
     font-size: 18pt;
@@ -89,7 +116,7 @@ p {
     margin-top: auto;
   }
 
-.sponsorCard button {
+.sponsorCard button, .financialSponsorCard button {
     border: none;
     font-family: 'Open Sans', sans-serif;
     background-color: inherit;
@@ -102,10 +129,10 @@ p {
     height: 2rem;
 }
 
-.sponsorCard:hover {
+.sponsorCard:hover, .financialSponsorCard:hover {
     cursor: pointer;
     transition: 0.5s;
-    background-color: #e0e0e0;
+    background-color: #e0e0e0 !important;
 }
 
 button:hover {

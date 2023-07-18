@@ -27,9 +27,56 @@ sponsors = [{
     sourceImage: "images/team-sponsors/holocene.png"
   },
   {
-    id: "sponsor6",
-    title: "Sponsor 2",
+    id: "sponsor7",
+    title: "National Bank Financial",
     href: "https://www.nbfwm.ca/advisor/macdougall-wealth-management-group.html",
     sourceImage: "images/team-sponsors/nationalbank.jpg"
+  },
+];
+
+const financialSponsors = [
+  {
+    id: "sponsor8",
+    title: "BAE Systems",
+    href: "https://www.baesystems.com/en/digital/product/wireless-technologies-electronics-and-signal-processing",
+    sourceImage: "images/financial-sponsors/PLATINUM_BAE.png",
+    tier: "platinum"
+  },
+  {
+    id: "sponsor9",
+    title: "Riot Technology Corp.",
+    href: "https://www.riotwireless.com/",
+    sourceImage: "images/financial-sponsors/GOLD_RIOT.png",
+    tier: "gold"
+  },
+
+  
+  {
+    id: "sponsor10",
+    title: "Fleetway",
+    href: "https://www.fleetway.ca/",
+    sourceImage: "images/financial-sponsors/SILVER_FLEETWAY.png",
+    tier: "silver"
+  },
+  {
+    id: "sponsor11",
+    title: "Zodiac Hurricane Technologies",
+    href: "https://zodiacmilpro.com/",
+    sourceImage: "images/financial-sponsors/SILVER_ZODIAC.png",
+    tier: "silver"
+  },
+  {
+    id: "sponsor12",
+    title: "3GA Marine Ltd.",
+    href: "https://www.nbfwm.ca/advisor/macdougall-wealth-management-group.html",
+    sourceImage: "images/financial-sponsors/BRONZE_3GA.png",
+    tier: "bronze"
+  },
+  {
+    id: "sponsor13",
+    title: "Electromate",
+    href: "https://www.electromate.com/",
+    sourceImage: "images/financial-sponsors/BRONZE_Electromate.png",
+    tier: "bronze"
   },
 ];
