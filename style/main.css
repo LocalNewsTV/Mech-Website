@@ -192,14 +192,14 @@ a:hover {
   Greeting Section
 *************************************/
 #greetingSection {
- display: flex;
- align-items: center;
- justify-content: center;
- flex-direction: center;
- width: 100%;
- height: auto;
- padding: 20pt 0;
- background: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: center;
+  width: 100%;
+  height: auto;
+  padding: 20pt 0;
+  background: inherit;
 }
 .greetingContainer {
   max-width: 900px;
@@ -207,9 +207,16 @@ a:hover {
   flex-direction: column;
   text-align: left;
 }
-.greetingContainer h2{
+.greetingContainer h2 {
   width: 100%;
   text-align: center;
+}
+.greetingContainer p {
+  font-size: 1.2em;
+  line-height: 1.5em;
+  text-align: justify;
+  padding: 0 10px;
+  margin: 5px 0;
 }
 blockquote {
   font-style: italic;
