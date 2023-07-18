@@ -7,14 +7,14 @@ newE = (type) => document.createElement(type);
 const projectCardMaker = (project) => {
     const cardAnch = newE('a');
     cardAnch.href = project.href;
-    
+
     const cardMain = newE('div');
     $(cardMain).addClass('projectCard');
 
     const card = newE('div');
     card.id = project.id;
     $(card).addClass('content');
-    
+
     const imageContainer = newE('div');
     $(imageContainer).addClass('imgCont');
     const cardImage = newE('img');
@@ -36,7 +36,7 @@ const projectCardMaker = (project) => {
     $(cardBody).append(cardText);
 
     const button = newE('button');
-    $(button).on('click', ()=>{window.location.href=`${project.href}`});
+    $(button).on('click', () => { window.location.href = `${project.href}` });
     $(button).html("Learn More");
     const buttonCont = newE('div');
     $(buttonCont).addClass('buttonCont');
@@ -47,7 +47,7 @@ const projectCardMaker = (project) => {
     $(buttonCont).append(button, gear);
     // $(cardBody).append(button);
     $(cardMain).append(card, buttonCont);
-    $(cardMain).on('click', () => { window.location.href=project.href; } );
+    $(cardMain).on('click', () => { window.location.href = project.href; });
     return cardMain;
 }
 
@@ -78,14 +78,17 @@ const sponsorCardMaker = (sponsor) => {
     $(cardTitle).html(sponsor.title);
     $(cardBody).append(cardTitle);
 
-    const button = newE('button');
-    $(button).on('click', ()=>{window.location.href=`${sponsor.href}`});
-    $(button).html("Learn More");
-    const buttonCont = newE('div');
-    $(buttonCont).addClass('buttonCont');
-    $(buttonCont).append(button);
-    $(cardMain).append(card, buttonCont);
-    $(cardMain).on('click', () => { window.location.href=sponsor.href; } );
+    // const button = newE('button');
+    // $(button).on('click', () => { window.location.href = `${sponsor.href}` });
+    // $(button).html("Learn More");
+    // const buttonCont = newE('div');
+    // $(buttonCont).addClass('buttonCont');
+    // $(buttonCont).append(button);
+    $(cardMain).append(card); // previous has buttonCont
+    if (sponsor.href !== "#") {
+        $(cardMain).on('click', () => { window.location.href = sponsor.href; });
+    }
+
     return cardMain;
 }
 
@@ -117,14 +120,14 @@ const financialSponsorCardMaker = (sponsor) => {
     // $(cardTitle).html(sponsor.title);
     // $(cardBody).append(cardTitle);
 
-    const button = newE('button');
-    $(button).on('click', ()=>{window.location.href=`${sponsor.href}`});
-    $(button).html("Learn More");
-    const buttonCont = newE('div');
-    $(buttonCont).addClass('buttonCont');
-    $(buttonCont).append(button);
-    $(cardMain).append(card, buttonCont);
-    $(cardMain).on('click', () => { window.location.href=sponsor.href; } );
+    // const button = newE('button');
+    // $(button).on('click', () => { window.location.href = `${sponsor.href}` });
+    // $(button).html("Learn More");
+    // const buttonCont = newE('div');
+    // $(buttonCont).addClass('buttonCont');
+    // $(buttonCont).append(button);
+    $(cardMain).append(card); // previously has buttonCont
+    $(cardMain).on('click', () => { window.location.href = sponsor.href; });
     return cardMain;
 }
 
@@ -150,14 +153,13 @@ const loadSponsors = () => {
 /******************************************************************************* 
  * @description Document Ready function that calls everything needed to fill in the content and run API calls
 ********************************************************************************/
-$(document).ready(()=>{
+$(document).ready(() => {
     //grabs url to choose which function to run
     var sPath = window.location.pathname;
     var sPage = sPath.substring(sPath.lastIndexOf('/') + 1);
 
-    if(sPage === "sponsors.html"){
+    if (sPage === "sponsors.html") {
         loadSponsors();
-        loadFinancialSponsors();
     } else {
         loadProjects();
     }
