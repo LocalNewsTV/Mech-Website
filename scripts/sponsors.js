@@ -53,7 +53,7 @@ const financialSponsors = [
     id: "sponsor10",
     title: "Vivid Solutions",
     href: "https://www.vividsolutions.com/",
-    sourceImage: "images/financial-sponsors/vivid.png",
+    sourceImage: "images/financial-sponsors/Vivid-no-bg.png",
     tier: "gold"
   },
   {
